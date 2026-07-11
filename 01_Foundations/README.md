@@ -1,59 +1,69 @@
 # 🏗️ Foundations
 
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Level](https://img.shields.io/badge/level-beginner--to--intermediate-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 > Build a strong cybersecurity foundation before diving into penetration testing, web application security, network exploitation, and Active Directory.
 
 This repository contains beginner-to-intermediate learning material covering the essential concepts every cybersecurity professional should understand. These notes are designed for students, ethical hackers, penetration testers, bug bounty hunters, and anyone starting their cybersecurity journey.
 
 ---
 
-# 📚 Contents
+## 📖 Table of Contents
 
-## 📖 Core Foundations
-
-- Foundations of Ethical Hacking & Kali Linux
-- Networking for Ethical Hackers
-- The Seven Layers of the OSI Model
-- The Internet Protocol Suite (TCP/IP)
-- Web Architecture Fundamentals
-- Network Topologies (Physical & Logical)
-
----
-
-## 🔐 Cybersecurity Fundamentals
-
-- CIA Triad
-- Cyber Kill Chain
-- MITRE ATT&CK Overview
-- The Periodic Table of Cybersecurity
+- [Learning Path](#-learning-path)
+- [Topics Covered](#-topics-covered)
+  - [Ethical Hacking](#ethical-hacking)
+  - [Networking Fundamentals](#networking-fundamentals)
+  - [Network Models](#network-models)
+  - [Network Topologies](#network-topologies)
+  - [Web Architecture](#web-architecture)
+  - [Security Models](#security-models)
+  - [Cybersecurity Concepts](#cybersecurity-concepts)
+- [Skills You'll Learn](#-skills-youll-learn)
+- [Folder Structure](#-folder-structure)
+- [Why Learn These Topics?](#-why-learn-these-topics)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-# 📂 Topics Covered
+## 🎯 Learning Path
 
-## Ethical Hacking
+It's recommended to study the documents in the following order:
+
+1. Foundations of Ethical Hacking & Kali Linux
+2. Networking for Ethical Hackers
+3. Network Topologies (Physical & Logical)
+4. The Seven Layers of the OSI Model
+5. The Internet Protocol Suite (TCP/IP)
+6. Web Architecture Fundamentals
+7. CIA Triad
+8. Cyber Kill Chain
+9. MITRE ATT&CK Overview
+10. The Periodic Table of Cybersecurity
+
+---
+
+## 📂 Topics Covered
+
+### Ethical Hacking
 
 - Introduction to Hacking
 - Ethical Hacking
 - Types of Hackers
 - Ethical Hacking Methodology
-- Red Team
-- Blue Team
-- Purple Team
+- Red Team / Blue Team / Purple Team
 - Common Security Threats
 - Information Security Risks
 - Information Security Controls
 - Kali Linux Basics
 
----
-
-## Networking Fundamentals
+### Networking Fundamentals
 
 - Computer Networks
-- LAN
-- WAN
-- MAN
-- PAN
-- WLAN
+- LAN, WAN, MAN, PAN, WLAN
 - Internet
 - IP Address
 - MAC Address
@@ -63,12 +73,9 @@ This repository contains beginner-to-intermediate learning material covering the
 - Routing
 - Network Communication
 
----
+### Network Models
 
-## Network Models
-
-### OSI Model
-
+**OSI Model**
 - Physical Layer
 - Data Link Layer
 - Network Layer
@@ -77,16 +84,15 @@ This repository contains beginner-to-intermediate learning material covering the
 - Presentation Layer
 - Application Layer
 
-### TCP/IP Model
-
+**TCP/IP Model**
 - Network Access Layer
 - Internet Layer
 - Transport Layer
 - Application Layer
 
----
+> Note: Transport Layer and Application Layer appear in both models — the TCP/IP model consolidates the OSI model's seven layers into four, so some names are intentionally shared rather than duplicated by mistake.
 
-## Network Topologies
+### Network Topologies
 
 - Bus Topology
 - Ring Topology
@@ -95,13 +101,10 @@ This repository contains beginner-to-intermediate learning material covering the
 - Tree Topology
 - Hybrid Topology
 
----
-
-## Web Architecture
+### Web Architecture
 
 - Client-Server Architecture
-- HTTP
-- HTTPS
+- HTTP / HTTPS
 - HTTP Methods
 - HTTP Status Codes
 - Request Headers
@@ -110,20 +113,14 @@ This repository contains beginner-to-intermediate learning material covering the
 - Sessions
 - REST APIs
 
----
+### Security Models
 
-## Security Models
-
-### CIA Triad
-
+**CIA Triad**
 - Confidentiality
 - Integrity
 - Availability
 
----
-
-### Cyber Kill Chain
-
+**Cyber Kill Chain**
 - Reconnaissance
 - Weaponization
 - Delivery
@@ -132,10 +129,7 @@ This repository contains beginner-to-intermediate learning material covering the
 - Command & Control (C2)
 - Actions on Objectives
 
----
-
-### MITRE ATT&CK
-
+**MITRE ATT&CK**
 - Tactics
 - Techniques
 - Sub-techniques
@@ -144,9 +138,7 @@ This repository contains beginner-to-intermediate learning material covering the
 - Mitigation
 - Real-world Adversary Behaviors
 
----
-
-## Cybersecurity Concepts
+### Cybersecurity Concepts
 
 - Threats
 - Vulnerabilities
@@ -158,7 +150,7 @@ This repository contains beginner-to-intermediate learning material covering the
 
 ---
 
-# 🛠 Skills You'll Learn
+## 🛠 Skills You'll Learn
 
 - Networking Fundamentals
 - Ethical Hacking Basics
@@ -175,7 +167,7 @@ This repository contains beginner-to-intermediate learning material covering the
 
 ---
 
-# 📁 Folder Structure
+## 📁 Folder Structure
 
 ```
 Foundations
@@ -186,39 +178,20 @@ Foundations
 ├── MITRE ATT&CK Overview.pdf
 ├── Network Topologies (Physical & Logical).pdf
 ├── Networking for Ethical Hackers.pdf
-├── The Internet Protocol Suite (TCP IP).pdf
+├── The Internet Protocol Suite (TCP-IP).pdf
 ├── The Seven Layers of the OSI Model.pdf
 ├── The Periodic Table of Cybersecurity.pdf
-└── Web Architecture Fundamentals.pdf 
+└── Web Architecture Fundamentals.pdf
 ```
 
 ---
 
-# 🎯 Learning Path
-
-It is recommended to study the documents in the following order:
-
-1. Foundations of Ethical Hacking & Kali Linux
-2. Networking for Ethical Hackers
-3. Network Topologies
-4. The Seven Layers of the OSI Model
-5. The Internet Protocol Suite (TCP/IP)
-6. Web Architecture Fundamentals
-7. CIA Triad
-8. Cyber Kill Chain
-9. MITRE ATT&CK Overview
-10. The Periodic Table of Cybersecurity
-
----
-
-# 🚀 Why Learn These Topics?
+## 🚀 Why Learn These Topics?
 
 Understanding these concepts is essential before moving to advanced cybersecurity topics such as:
 
-- Information Gathering
-- Reconnaissance
-- Nmap
-- Wireshark
+- Information Gathering & Reconnaissance
+- Nmap & Wireshark
 - Enumeration
 - Vulnerability Assessment
 - Web Application Security
@@ -232,6 +205,22 @@ Understanding these concepts is essential before moving to advanced cybersecurit
 - Bug Bounty Hunting
 
 A solid foundation makes advanced penetration testing and defensive security concepts much easier to understand.
+
+---
+
+## 👤 Author
+
+**Omkar Sawant**
+Cybersecurity Enthusiast | Aspiring Penetration Tester
+
+- GitHub: [@omkarsawant1337](https://github.com/omkarsawant1337)
+- LinkedIn: [omkar-sawant-vapt](https://linkedin.com/in/omkar-sawant-vapt)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
