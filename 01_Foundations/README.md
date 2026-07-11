@@ -189,7 +189,7 @@ Foundations
 ├── The Internet Protocol Suite (TCP IP).pdf
 ├── The Seven Layers of the OSI Model.pdf
 ├── The Periodic Table of Cybersecurity.pdf
-└──Web Architecture Fundamentals.pdf 
+└── Web Architecture Fundamentals.pdf 
 ```
 
 ---
