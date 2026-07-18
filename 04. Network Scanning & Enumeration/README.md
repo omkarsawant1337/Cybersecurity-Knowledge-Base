@@ -1,465 +1,262 @@
-````markdown
 # 🌐 Network Scanning & Enumeration
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Level](https://img.shields.io/badge/level-beginner--to--intermediate-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 > Learn the complete network reconnaissance and enumeration process used in ethical hacking and penetration testing. Master Nmap, NSE scripts, packet analysis, service enumeration, and protocol-specific penetration testing methodologies.
 
 ---
 
-# 📚 Contents
+## 📖 Table of Contents
 
-## 🌐 Network Scanning Fundamentals
-
-- Network Scanning Basics
-- Reconnaissance vs Active Scanning
-- Port Scanning
-- Vulnerability Scanning
-- Attack Surface Mapping
-
----
-
-## 🔍 Nmap
-
-- Nmap Fundamentals
-- Nmap Command Cheat Sheet
-- Scan Types
-- Host Discovery
-- Service Detection
-- OS Detection
-- Timing & Performance
-- Firewall Evasion
-
----
-
-## ⚙️ Nmap NSE & Netcat
-
-- Nmap Scripting Engine (NSE)
-- Default Scripts
-- Vulnerability Scripts
-- Enumeration Scripts
-- Netcat
-- Banner Grabbing
-- Reverse & Bind Shells
-- File Transfer
+- [Recommended Learning Path](#-recommended-learning-path)
+- [Topics Covered](#-topics-covered)
+  - [Network Scanning for Ethical Hacking](#-network-scanning-for-ethical-hacking)
+  - [Nmap Ultimate Command Cheat Sheet](#-nmap-ultimate-command-cheat-sheet)
+  - [Nmap NSE Scripts & Netcat](#️-nmap-nse-scripts--netcat)
+  - [Tcpdump](#-tcpdump)
+  - [Wireshark](#-wireshark)
+  - [Enum4linux](#-enum4linux)
+  - [SMBMap](#-smbmap)
+  - [SNMP, LDAP & RPC Enumeration](#-snmp-ldap--rpc-enumeration)
+  - [Common Ports](#-common-ports)
+  - [DNS Penetration Testing](#-dns-penetration-testing)
+  - [FTP Penetration Testing](#-ftp-penetration-testing)
+  - [NFS Penetration Testing](#-nfs-penetration-testing)
+  - [SMB Penetration Testing](#-smb-penetration-testing)
+  - [SMTP Penetration Testing](#-smtp-penetration-testing)
+  - [SNMP Penetration Testing](#-snmp-penetration-testing)
+  - [IMAP & POP3 Penetration Testing](#-imap--pop3-penetration-testing)
+- [Skills You'll Learn](#-skills-youll-learn)
+- [Folder Structure](#-folder-structure)
+- [Why Learn These Topics?](#-why-learn-these-topics)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## 📦 Packet Analysis
+## 🎯 Recommended Learning Path
 
-- Tcpdump
-- Berkeley Packet Filter (BPF)
-- Wireshark
-- Capture Filters
-- Display Filters
-- Traffic Analysis
+Study the topics in this order (matches the numbering used in the folder):
 
----
-
-## 🖥 Windows & Active Directory Enumeration
-
-- Enum4linux
-- SMBMap
-- SMB Enumeration
-- LDAP Enumeration
-- RPC Enumeration
-- SNMP Enumeration
-
----
-
-## 🌍 Common Network Services
-
-- Common TCP Ports
-- Common UDP Ports
-- Service Identification
-- Enumeration Workflow
+1. Network Scanning Fundamentals
+2. Nmap Ultimate Command Cheat Sheet
+3. Nmap NSE Scripts & Netcat
+4. Tcpdump
+5. Wireshark
+6. Enum4linux
+7. SMBMap
+8. SNMP, LDAP & RPC Enumeration
+9. Common Ports
+10. DNS Penetration Testing
+11. FTP Penetration Testing
+12. NFS Penetration Testing
+13. SMB Penetration Testing
+14. SMTP Penetration Testing
+15. SNMP Penetration Testing
+16. IMAP & POP3 Penetration Testing
 
 ---
 
-## 🔐 Protocol Penetration Testing
+## 📂 Topics Covered
 
-- DNS
-- FTP
-- NFS
-- SMB
-- SMTP
-- SNMP
-- IMAP
-- POP3
-
----
-
-# 📂 Topics Covered
-
-## 🌐 Network Scanning for Ethical Hacking
+### 🌐 Network Scanning for Ethical Hacking
 
 Understand how attackers and penetration testers identify live hosts, open ports, running services, operating systems, and potential attack surfaces.
 
 Topics include:
 
-- Network Scanning Fundamentals
-- Reconnaissance vs Scanning
-- Active vs Passive Reconnaissance
-- Port Scanning
-- Vulnerability Scanning
-- TCP Connect Scan
-- SYN Scan
-- UDP Scan
-- ACK Scan
-- FIN Scan
-- Window Scan
-- OS Fingerprinting
-- Service Enumeration
-- Attack Surface Mapping
-- Vulnerability Assessment
+- Network Scanning Fundamentals & Reconnaissance vs. Scanning
+- Active vs. Passive Reconnaissance
+- Port Scanning & Vulnerability Scanning
+- TCP Connect, SYN, UDP, ACK, FIN & Window Scans
+- OS Fingerprinting & Service Enumeration
+- Attack Surface Mapping & Vulnerability Assessment
 - Best Practices
 
----
-
-## 🔍 Nmap Ultimate Command Cheat Sheet
+### 🔍 Nmap Ultimate Command Cheat Sheet
 
 Master one of the most important tools used in cybersecurity.
 
 Topics include:
 
-- Target Specification
-- Host Discovery
-- Ping Sweep
-- Scan Types
-- TCP SYN Scan
-- TCP Connect Scan
-- UDP Scan
-- ACK Scan
-- FIN, NULL & Xmas Scans
-- Service Version Detection
-- OS Detection
-- NSE Scripts
-- Timing Templates
-- Port Selection
-- Firewall Evasion
-- Output Formats
-- Performance Optimization
+- Target Specification & Host Discovery (Ping Sweep)
+- Scan Types — TCP SYN, TCP Connect, UDP, ACK, FIN, NULL & Xmas Scans
+- Service Version Detection & OS Detection
+- NSE Scripts & Timing Templates
+- Port Selection & Firewall Evasion
+- Output Formats & Performance Optimization
 
----
-
-## ⚙️ Nmap NSE Scripts & Netcat
+### ⚙️ Nmap NSE Scripts & Netcat
 
 Extend Nmap with automation and learn practical networking using Netcat.
 
 Topics include:
 
-- Nmap Scripting Engine (NSE)
-- Discovery Scripts
-- Enumeration Scripts
-- Vulnerability Scripts
-- Authentication Scripts
-- SMB Scripts
-- HTTP Scripts
-- FTP Scripts
-- DNS Scripts
-- SSL Scripts
-- Netcat Basics
-- Banner Grabbing
-- Port Listening
-- File Transfers
-- Reverse Shells
-- Bind Shells
-- Networking Troubleshooting
+- Nmap Scripting Engine (NSE) — Discovery, Enumeration, Vulnerability & Authentication Scripts
+- SMB, HTTP, FTP, DNS & SSL Scripts
+- Netcat Basics, Banner Grabbing, Port Listening
+- File Transfers, Reverse Shells, Bind Shells
+- Network Troubleshooting
 
----
-
-## 📦 Tcpdump
+### 📦 Tcpdump
 
 Learn command-line packet capture and analysis.
 
 Topics include:
 
-- Packet Capture
-- Interfaces
-- Capture Files
-- Berkeley Packet Filter (BPF)
-- Protocol Filters
-- Host Filters
-- Port Filters
-- TCP Flag Filters
-- Reading PCAP Files
-- Packet Analysis
-- Troubleshooting
-- Security Monitoring
-- Traffic Investigation
+- Packet Capture, Interfaces, Capture Files
+- Berkeley Packet Filter (BPF) — Protocol, Host, Port & TCP Flag Filters
+- Reading PCAP Files & Packet Analysis
+- Troubleshooting, Security Monitoring & Traffic Investigation
 
----
-
-## 🦈 Wireshark
+### 🦈 Wireshark
 
 Perform deep packet inspection and network traffic analysis.
 
 Topics include:
 
-- Wireshark Interface
-- Packet Capture
-- PCAP Analysis
-- Capture Filters
-- Display Filters
-- Packet Dissection
-- Protocol Analysis
-- OSI Layer Mapping
-- Packet Navigation
-- Expert Information
-- Statistics
-- Network Troubleshooting
-- Digital Forensics
+- Wireshark Interface & Packet Capture
+- PCAP Analysis, Capture Filters, Display Filters
+- Packet Dissection & Protocol Analysis
+- OSI Layer Mapping & Packet Navigation
+- Expert Information & Statistics
+- Network Troubleshooting & Digital Forensics
 
----
-
-## 🖥 Enum4linux
+### 🖥 Enum4linux
 
 Enumerate Windows and Samba environments.
 
 Topics include:
 
-- Null Sessions
-- User Enumeration
-- Group Enumeration
-- Password Policies
-- Share Enumeration
-- RID Cycling
-- Machine Information
-- SMB Enumeration
-- Enum4linux-ng
+- Null Sessions, User & Group Enumeration
+- Password Policies & Share Enumeration
+- RID Cycling & Machine Information
+- SMB Enumeration & Enum4linux-ng
 - Active Directory Reconnaissance
 
----
-
-## 📁 SMBMap
+### 📁 SMBMap
 
 Discover SMB shares and permissions.
 
 Topics include:
 
-- Share Enumeration
-- Access Levels
-- Recursive Listing
-- File Download
-- File Upload
-- Command Execution
-- Authentication
-- Null Sessions
-- Writable Share Discovery
+- Share Enumeration & Access Levels
+- Recursive Listing, File Download, File Upload
+- Command Execution & Authentication
+- Null Sessions & Writable Share Discovery
 
----
-
-## 🌳 SNMP, LDAP & RPC Enumeration
+### 🌳 SNMP, LDAP & RPC Enumeration
 
 Learn how to enumerate enterprise environments.
 
-Topics include:
+**SNMP** — Community Strings, SNMP Versions, OIDs, SNMPWalk, SNMPCheck, OneSixtyOne, Device Enumeration
 
-### SNMP
+**LDAP** — Active Directory Enumeration, Domain Objects, Users, Groups, Organizational Units, LDAPSearch
 
-- Community Strings
-- SNMP Versions
-- OIDs
-- SNMPWalk
-- SNMPCheck
-- OneSixtyOne
-- Device Enumeration
+**RPC** — RPC Enumeration, `rpcclient`, `rpcinfo`, Windows Services, Domain Information
 
-### LDAP
-
-- Active Directory Enumeration
-- Domain Objects
-- Users
-- Groups
-- Organizational Units
-- LDAPSearch
-
-### RPC
-
-- RPC Enumeration
-- rpcclient
-- rpcinfo
-- Windows Services
-- Domain Information
-
----
-
-## 🔢 Common Ports
+### 🔢 Common Ports
 
 Master the most important TCP and UDP ports used during penetration testing.
 
 Topics include:
 
-- File Transfer Ports
-- Web Ports
-- Email Ports
-- Active Directory Ports
-- Database Ports
-- Network Infrastructure Ports
-- Remote Administration Ports
-- Linux Services
-- Windows Services
-- UDP Services
-- Port-to-Service Mapping
-- Enumeration Workflow
+- File Transfer, Web & Email Ports
+- Active Directory & Database Ports
+- Network Infrastructure & Remote Administration Ports
+- Linux Services, Windows Services & UDP Services
+- Port-to-Service Mapping & Enumeration Workflow
 
----
-
-## 🌐 DNS Penetration Testing
+### 🌐 DNS Penetration Testing
 
 Topics include:
 
-- DNS Reconnaissance
-- Banner Grabbing
-- DNS Enumeration
-- Zone Transfers (AXFR)
-- Subdomain Enumeration
-- DNSSEC
-- DNS Tunneling
-- Cache Snooping
-- Version Detection
-- DNS Spoofing
-- Detection & Remediation
+- DNS Reconnaissance & Banner Grabbing
+- DNS Enumeration & Zone Transfers (AXFR)
+- Subdomain Enumeration & DNSSEC
+- DNS Tunneling & Cache Snooping
+- Version Detection, DNS Spoofing, Detection & Remediation
 
----
-
-## 📂 FTP Penetration Testing
+### 📂 FTP Penetration Testing
 
 Topics include:
 
-- Banner Grabbing
-- Anonymous Login
-- Directory Enumeration
-- FTP Features
-- Credential Attacks
-- Brute Force
-- FTP Bounce
-- File Upload
-- Post Exploitation
-- Evidence Collection
-- Hardening
+- Banner Grabbing & Anonymous Login
+- Directory Enumeration & FTP Features
+- Credential Attacks & Brute Force
+- FTP Bounce & File Upload
+- Post Exploitation, Evidence Collection & Hardening
 
----
-
-## 📁 NFS Penetration Testing
+### 📁 NFS Penetration Testing
 
 Topics include:
 
-- RPC Discovery
-- Showmount
-- Export Enumeration
-- Mounting Shares
-- no_root_squash
-- Writable Exports
+- RPC Discovery & Showmount
+- Export Enumeration & Mounting Shares
+- `no_root_squash` & Writable Exports
 - UID/GID Manipulation
-- Privilege Escalation
-- Persistence
-- Hardening
+- Privilege Escalation, Persistence & Hardening
 
----
-
-## 🖥 SMB Penetration Testing
+### 🖥 SMB Penetration Testing
 
 Topics include:
 
-- SMB Enumeration
-- Null Sessions
-- SMB Signing
-- Share Discovery
-- User Enumeration
-- SMBMap
-- Enum4linux
-- MS17-010
-- SMBGhost
-- Credential Attacks
-- Relay Attacks
-- Hardening
+- SMB Enumeration & Null Sessions
+- SMB Signing & Share Discovery
+- User Enumeration — SMBMap, Enum4linux
+- MS17-010 & SMBGhost
+- Credential Attacks, Relay Attacks & Hardening
 
----
-
-## 📧 SMTP Penetration Testing
+### 📧 SMTP Penetration Testing
 
 Topics include:
 
-- SMTP Enumeration
-- Banner Grabbing
-- EHLO Enumeration
-- VRFY
-- EXPN
-- User Enumeration
-- Open Relay Testing
-- SPF
-- DKIM
-- DMARC
-- Mail Spoofing
-- Hardening
+- SMTP Enumeration & Banner Grabbing
+- EHLO Enumeration, VRFY, EXPN
+- User Enumeration & Open Relay Testing
+- SPF, DKIM, DMARC
+- Mail Spoofing & Hardening
 
----
-
-## 📡 SNMP Penetration Testing
+### 📡 SNMP Penetration Testing
 
 Topics include:
 
 - Community String Discovery
-- SNMPWalk
-- SNMPGet
-- SNMPCheck
-- OneSixtyOne
-- MIB Enumeration
-- Device Configuration
-- Routing Tables
-- Read/Write Communities
+- SNMPWalk, SNMPGet, SNMPCheck, OneSixtyOne
+- MIB Enumeration & Device Configuration
+- Routing Tables & Read/Write Communities
 - Hardening
 
----
-
-## 📬 IMAP & POP3 Penetration Testing
+### 📬 IMAP & POP3 Penetration Testing
 
 Topics include:
 
-- IMAP Enumeration
-- POP3 Enumeration
-- Authentication Methods
-- CAPABILITY
-- NTLM
-- Mailbox Enumeration
-- Credential Attacks
-- Password Spraying
-- Email Harvesting
-- TLS Security
-- Hardening
+- IMAP & POP3 Enumeration
+- Authentication Methods — CAPABILITY, NTLM
+- Mailbox Enumeration & Credential Attacks
+- Password Spraying & Email Harvesting
+- TLS Security & Hardening
 
 ---
 
-# 🛠 Skills You'll Learn
+## 🛠 Skills You'll Learn
 
-- Network Reconnaissance
-- Active Enumeration
-- Port Scanning
-- Service Enumeration
+- Network Reconnaissance & Active Enumeration
+- Port Scanning & Service Enumeration
 - Vulnerability Identification
-- Nmap Mastery
-- NSE Automation
+- Nmap Mastery & NSE Automation
 - Netcat Usage
-- Packet Analysis
-- Tcpdump
-- Wireshark
-- SMB Enumeration
-- Active Directory Enumeration
-- SNMP Enumeration
-- LDAP Enumeration
-- RPC Enumeration
+- Packet Analysis — Tcpdump & Wireshark
+- SMB, Active Directory, SNMP, LDAP & RPC Enumeration
 - Common Network Services
-- DNS Security Testing
-- FTP Security Testing
-- SMB Security Testing
-- NFS Security Testing
-- SMTP Security Testing
-- IMAP/POP3 Security Testing
-- Protocol Enumeration
+- Protocol-Specific Security Testing — DNS, FTP, SMB, NFS, SMTP, IMAP/POP3
 - Network Attack Surface Assessment
 
 ---
 
-# 📁 Folder Structure
+## 📁 Folder Structure
 
 ```text
 04_Network_Scanning_&_Enumeration
@@ -485,30 +282,7 @@ Topics include:
 
 ---
 
-# 🎯 Recommended Learning Path
-
-Study the topics in the following order:
-
-1. Network Scanning Fundamentals
-2. Nmap Ultimate Command Cheat Sheet
-3. Nmap NSE Scripts & Netcat
-4. Tcpdump
-5. Wireshark
-6. Enum4linux
-7. SMBMap
-8. SNMP, LDAP & RPC Enumeration
-9. Common Ports
-10. DNS Penetration Testing
-11. FTP Penetration Testing
-12. NFS Penetration Testing
-13. SMB Penetration Testing
-14. SMTP Penetration Testing
-15. SNMP Penetration Testing
-16. IMAP & POP3 Penetration Testing
-
----
-
-# 🚀 Why Learn These Topics?
+## 🚀 Why Learn These Topics?
 
 Network scanning and enumeration form the foundation of every penetration test and security assessment. Before identifying vulnerabilities or exploiting weaknesses, security professionals must first discover systems, services, protocols, and configurations exposed within the target environment.
 
@@ -526,42 +300,20 @@ By mastering these topics, you'll be able to:
 
 ---
 
-# 📖 Resources Included
+## 👤 Author
 
-✔ Network Scanning Fundamentals
+**Omkar Sawant**
+Cybersecurity Enthusiast | Aspiring Penetration Tester
 
-✔ Nmap Ultimate Command Cheat Sheet
-
-✔ Nmap NSE Scripts & Netcat Toolkit
-
-✔ Tcpdump Study Guide
-
-✔ Wireshark Capture & Display Filters
-
-✔ Enum4linux Study Guide
-
-✔ SMBMap Study Guide
-
-✔ SNMP · LDAP · RPC Enumeration Study Guide
-
-✔ Common Ports Study Guide
-
-✔ DNS Penetration Testing
-
-✔ FTP Penetration Testing
-
-✔ NFS Penetration Testing
-
-✔ SMB Penetration Testing
-
-✔ SMTP Penetration Testing
-
-✔ SNMP Penetration Testing
-
-✔ IMAP & POP3 Penetration Testing
+- GitHub: [@omkarsawant1337](https://github.com/omkarsawant1337)
+- LinkedIn: [omkar-sawant-vapt](https://linkedin.com/in/omkar-sawant-vapt)
 
 ---
 
-⭐ **If you find these notes helpful, consider giving this repository a Star ⭐ to support the project and help others learn cybersecurity!**
-````
+## 📄 License
 
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+⭐ **If you find these notes helpful, consider giving this repository a Star to support the project and help others learn cybersecurity!**
