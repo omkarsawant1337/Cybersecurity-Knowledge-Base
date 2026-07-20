@@ -1,0 +1,70 @@
+[CVE-2012-1823] [http] [high] http://192.168.10.21/index.php?-d+allow_url_include%3don+-d+auto_prepend_file%3dphp%3a//input
+[phpmyadmin-panel] [http] [info] http://192.168.10.21/phpMyAdmin/index.php [paths="/phpMyAdmin/index.php"]
+[phpinfo-files] [http] [low] http://192.168.10.21/phpinfo.php [paths="/phpinfo.php"]
+[apache-mod-negotiation-listing:exposed_files] [http] [low] http://192.168.10.21/index ["index.php"] [path="/index"]
+[http-trace:trace-request] [http] [info] http://192.168.10.21
+[waf-detect:apachegeneric] [http] [info] http://192.168.10.21
+[ssh-auth-methods] [javascript] [info] 192.168.10.21:22 ["["publickey","password"]"]
+[vnc-default-login] [javascript] [high] 192.168.10.21:5900 [passwords="password123"]
+[vnc-default-login] [javascript] [high] 192.168.10.21:5900 [passwords="password"]
+[mysql-info] [javascript] [info] 192.168.10.21:3306 ["Transport: tcp","Version: 5.0.51a-3ubuntu5"]
+[postgres-default-logins] [javascript] [high] 192.168.10.21:5432 [passwords="postgres",usernames="postgres"]
+[samba-detect] [javascript] [info] 192.168.10.21:445 ["Samba 3.0.20-Debian"]
+[CVE-2026-4480:version] [javascript] [critical] 192.168.10.21:445 ["3.0.20"]
+[rlogin-detect] [javascript] [info] 192.168.10.21:513
+[pgsql-default-db] [javascript] [high] 192.168.10.21:5432 [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-default-db] [javascript] [high] 192.168.10.21:5432 [database="template1",password="postgres",usernames="postgres"]
+[pgsql-default-db] [javascript] [high] 192.168.10.21:5432 [database="postgres",password="",usernames="postgres"]
+[ntlm-info] [javascript] [info] 192.168.10.21:445 ["NTLM: Samba 3.0.20-Debian"]
+[smb-v1-supported] [javascript] [info] 192.168.10.21:445
+[smb-version-detect:smb-version] [javascript] [info] 192.168.10.21:445 ["SMB 1.0"]
+[ssh-password-auth] [javascript] [info] 192.168.10.21:22
+[pgsql-default-db] [javascript] [high] 192.168.10.21:5432 [database="template1",password="",usernames="postgres"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.10.21:22
+[ssh-server-enumeration] [javascript] [info] 192.168.10.21:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.10.21:22
+[pgsql-empty-password] [javascript] [critical] 192.168.10.21:5432
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.10.21:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.10.21:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.10.21:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.10.21:22
+[netbios-udp-detect] [javascript] [info] 192.168.10.21:137 ["NetBIOS Name Service Detected"]
+[rpc-udp-detect] [javascript] [info] 192.168.10.21:111 ["RPC Portmapper UDP Detected"]
+[CVE-2004-2687] [tcp] [high] 192.168.10.21:3632
+[CVE-2011-2523] [tcp] [critical] 192.168.10.21:6200
+[CVE-2015-1419:version] [tcp] [medium] 192.168.10.21:21 ["2.3.4"]
+[CVE-2020-1938] [tcp] [critical] 192.168.10.21:8009
+[CVE-2021-30047:version] [tcp] [high] 192.168.10.21:21 ["2.3.4"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="password",username="ftp"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="toor",username="ftp"]
+[esmtp-detect] [tcp] [info] 192.168.10.21:25
+[ftp-detect] [tcp] [info] 192.168.10.21:21
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="default",username="ftp"]
+[vsftpd-detect:version] [tcp] [info] 192.168.10.21:21 ["2.3.4"]
+[nfs-v3-exposed] [tcp] [info] 192.168.10.21:2049
+[openssh-detect] [tcp] [info] 192.168.10.21:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]
+[smtp-detect] [tcp] [info] 192.168.10.21:25
+[vnc-service-detect] [tcp] [info] 192.168.10.21:5900 ["RFB 003.003"]
+[smtp-commands-enum:ehlo] [tcp] [info] 192.168.10.21:25 ["SIZE 10240000","VRFY","ETRN","STARTTLS","ENHANCEDSTATUSCODES","8BITMIME","DSN","PIPELINING"]
+[ajp-protocol-detect] [javascript] [info] 192.168.10.21:8009 ["AJP Detected"]
+[ftp-anonymous-login] [tcp] [medium] 192.168.10.21:21
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="123456",username="ftp"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="pass1",username="ftp"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="stingray",username="ftp"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="nas",username="ftp"]
+[ftp-weak-credentials] [tcp] [high] 192.168.10.21:21 [password="guest",username="ftp"]
+[apache-detect] [http] [info] http://192.168.10.21 ["Apache/2.2.8 (Ubuntu) DAV/2"]
+[apache-httpd-eol:version] [http] [info] http://192.168.10.21 ["2.2.8"]
+[php-eol:version] [http] [info] http://192.168.10.21 ["5.2.4"]
+[php-detect] [http] [info] http://192.168.10.21 ["5.2.4"]
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.10.21
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.10.21
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.10.21
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.10.21
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.10.21
+[tech-detect:php] [http] [info] http://192.168.10.21
