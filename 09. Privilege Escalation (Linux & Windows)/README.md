@@ -679,8 +679,6 @@ Prioritize Findings → Validate → Escalate Privileges
 └── README.md
 ```
 
-*(Corrected numbering — rename the actual files on disk to match, since two currently share the same number/name.)*
-
 ---
 
 ## ⚠️ Ethical & Legal Use
