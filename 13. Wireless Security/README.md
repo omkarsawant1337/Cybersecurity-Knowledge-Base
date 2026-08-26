@@ -365,7 +365,7 @@ Conceptual progression across the six PDFs: **protocol weaknesses → authentica
 ```text
 13_Wireless_Security
 │
-├── 01. WEP · WPA · WPA2 · WPA3.pdf
+├── 01. Wi-Fi Security Evolution (WEP → WPA → WPA2 → WPA3).pdf
 ├── 02. Aircrack-ng.pdf
 ├── 03. Reaver.pdf
 ├── 04. Wifite.pdf
